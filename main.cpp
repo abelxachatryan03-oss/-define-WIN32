@@ -1,5 +1,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+#include <shellapi.h>
 #include <lm.h>
 #include <shlobj.h>
 #include <string>
@@ -11,6 +12,7 @@
 #pragma comment(lib, "shell32.lib")
 #pragma comment(lib, "ole32.lib")
 #pragma comment(lib, "advapi32.lib")
+#pragma comment(lib, "user32.lib")
 
 // ---------- 1. Гугл с запросом ----------
 static void OpenGoogleSearch(const std::wstring& query) {
